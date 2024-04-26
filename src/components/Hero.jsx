@@ -2,6 +2,7 @@ import {motion} from "framer-motion";
 import {styles} from "../styles.js";
 import {ComputersCanvas} from "./canvas";
 import {TypeAnimation} from "react-type-animation";
+import {SpaceCanvas} from "./canvas";
 
 const Hero = () => {
     return (
@@ -30,9 +31,9 @@ const Hero = () => {
                             "Machine Learning Engineer",
                             1500,
                         ]}
-                        className={`${styles.heroSubText}`}
+                        className={`${styles.heroSubText} mt-2`}
                         wrapper="p"
-                        speed={60}
+                        speed={30}
                         deletionSpeed={70}
                         style={{
                             fontWeight: "300",
@@ -43,7 +44,16 @@ const Hero = () => {
                     />
                 </div>
             </div>
-            <ComputersCanvas/>
+
+            <div className={`flex flex-col h-screen`}>
+                <div className={`h-1/4`}>
+                    <SpaceCanvas/>
+                </div>
+                <div className={`h-3/4`}>
+                    <ComputersCanvas/>
+                </div>
+            </div>
+
 
             <div className={`absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center`}>
                 <a href="#about">
