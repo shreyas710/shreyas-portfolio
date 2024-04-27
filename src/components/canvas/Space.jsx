@@ -11,27 +11,19 @@ const Space = () => {
     const computer = useGLTF('./need_some_space/scene.gltf')
     return (
         <mesh>
-            <primitive object={computer.scene} scale={1.75}
+            <primitive object={computer.scene} scale={3}
                        position={[0, 0, 1]}/>
         </mesh>
     )
 }
 
 const SpaceCanvas = () => {
-    const [rotate, setRotate] = useState(true);
-
-    useEffect(() => {
-        setTimeout(() => {
-            setRotate(false);
-        }, 2000)
-    })
-
     return (
         <div className={`w-full h-full absolute inset-0 z-[-1]`}>
-            <Canvas frameloop={`demand`} camera={{position: [10, -10, 0], fov: 25}}
+            <Canvas frameloop={`demand`} camera={{position: [-10, 2, -10], fov: 25}}
                     gl={{preserveDrawingBuffer: true}}>
                 <Suspense fallback={<CanvasLoader/>}>
-                    <OrbitControls autoRotateSpeed={6.0} autoRotate={rotate}/>
+                    <OrbitControls autoRotateSpeed={1} autoRotate/>
                     <Space/>
                 </Suspense>
                 <Preload all/>

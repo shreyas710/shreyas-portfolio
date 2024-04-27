@@ -1,10 +1,13 @@
 import {
-    carrent,
-    jobit,
     bajaj,
     persistent,
-    tripguide,
-    hitesh
+    hitesh,
+    lagLlama,
+    pathFinding,
+    chatIO,
+    poolBall,
+    chexnet,
+    placementPortal
 } from "../assets";
 
 export const navLinks = [
@@ -61,42 +64,42 @@ const technologies = [
     {
         name: "Frontend",
         tech: [
-            {name: 'NextJS'}, {name: "ReactJS"}, {name: "Redux"}, {name: "Angular"}, {name: "ThreeJS"}, {name: "Tailwind CSS"}, {name: "Chakra UI"}, {name: "Material UI"}
+            { name: 'NextJS' }, { name: "ReactJS" }, { name: "Redux" }, { name: "Angular" }, { name: "ThreeJS" }, { name: "Tailwind CSS" }, { name: "Chakra UI" }, { name: "Material UI" }
         ],
         color: "text-[#FFBF00]"
     },
     {
         name: "Backend",
         tech: [
-            {name: "NodeJS"}, {name: "Rest APIs"}, {name: "GraphQL"}, {name: "Spring Boot"}, {name: "Flask"}, {name: "Django"}, {name: "Socket.io"}, {name: "JWT"}
+            { name: "NodeJS" }, { name: "Rest APIs" }, { name: "GraphQL" }, { name: "Spring Boot" }, { name: "Flask" }, { name: "Django" }, { name: "Socket.io" }, { name: "JWT" }
         ],
         color: "text-[#5BFF33]"
     },
     {
         name: "Databases",
         tech: [
-            {name: "MySQL"}, {name: "MongoDB"}, {name: "PostgreSQL"}, {name: "Supabase"}, {name: "Elasticsearch"}
+            { name: "MySQL" }, { name: "MongoDB" }, { name: "PostgreSQL" }, { name: "Supabase" }, { name: "Elasticsearch" }
         ],
         color: "text-[#5233FF]"
     },
     {
         name: "Devops",
         tech: [
-            {name: "CI/CD"}, {name: "Jenkins"}, {name: "Ansible"}, {name: "Terraform"}, {name: "Azure"}, {name: "AWS"}, {name: "Docker"}, {name: "Kubernetes"}, {name: "MiniKube"}
+            { name: "CI/CD" }, { name: "Jenkins" }, { name: "Ansible" }, { name: "Terraform" }, { name: "Azure" }, { name: "AWS" }, { name: "Docker" }, { name: "Kubernetes" }, { name: "MiniKube" }
         ],
         color: "text-[#33FFE9]"
     },
     {
         name: "Machine Learning",
         tech: [
-            {name: "Numpy"}, {name: "Keras"}, {name: "Pandas"}, {name: "PyTorch"}, {name: "Tensorflow"}, {name: "Neural Networks"}, {name: "RNN"}, {name: "CNN"}, {name: "LLM"}, {name: "Deep Learning"}, {name: "Data Analytics"}
+            { name: "Numpy" }, { name: "Keras" }, { name: "Pandas" }, { name: "PyTorch" }, { name: "Tensorflow" }, { name: "Neural Networks" }, { name: "RNN" }, { name: "CNN" }, { name: "LLM" }, { name: "Deep Learning" }, { name: "Data Analytics" }
         ],
         color: "text-[#EF1A3F]"
     },
     {
         name: "Game Development",
         tech: [
-            {name: "Unreal Engine"}, {name: "3D Math"}, {name: "3D Computer Vision"}, {name: "3D Audio"}, {name: "3D Tracking"}, {name: "Win32 API"}, {name: "DirectX"}
+            { name: "Unreal Engine" }, { name: "3D Math" }, { name: "3D Computer Vision" }, { name: "3D Audio" }, { name: "3D Tracking" }, { name: "Win32 API" }, { name: "DirectX" }
         ],
         color: "text-[#EF1AE5]"
     }
@@ -144,68 +147,171 @@ const testimonials = [
 
 const projects = [
     {
-        name: "Car Rent",
+        name: "Quantized Lag Llama",
         description:
-            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+            "Tweaked the GluonTS Lag Llama model to run it on CPU instead of GPU. Brought down the model size from 11.34 MB to 2.01 MB by converting float precision values in GluonTS to integer values.",
         tags: [
             {
-                name: "react",
+                name: "Pytorch",
                 color: "blue-text-gradient",
             },
             {
-                name: "mongodb",
+                name: "GluonTS",
                 color: "green-text-gradient",
             },
             {
-                name: "tailwind",
+                name: "Numpy",
                 color: "pink-text-gradient",
             },
+            {
+                name: "Time Series",
+                color: "blue-text-gradient",
+            }
         ],
-        image: carrent,
-        source_code_link: "https://github.com/",
+        image: lagLlama,
+        source_code_link: "https://github.com/atharvajoshi10/quantized-lag-llama",
     },
     {
-        name: "Job IT",
+        name: "Pool Ball Game",
         description:
-            "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+            "A 3D Pool Ball Game developed using C++. Implemented the game using various physics concepts like collision detection using SAT and GJK, momentum conservation, and friction.",
         tags: [
             {
-                name: "react",
+                name: "C++",
                 color: "blue-text-gradient",
             },
             {
-                name: "restapi",
+                name: "OpenGL",
                 color: "green-text-gradient",
             },
             {
-                name: "scss",
+                name: "DirectX",
                 color: "pink-text-gradient",
             },
+            {
+                name: "Win32 API",
+                color: "blue-text-gradient",
+            }
         ],
-        image: jobit,
-        source_code_link: "https://github.com/",
+        image: poolBall,
     },
     {
-        name: "Trip Guide",
+        name: "Path Finding Visualizer",
         description:
-            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+            "Application to visualize path between start and end point using various Path finding algorithms like Dijkstra's, BFS, DFS, A*, and Bidirectional Swarm.",
         tags: [
             {
-                name: "nextjs",
+                name: "ReactJS",
                 color: "blue-text-gradient",
             },
             {
-                name: "supabase",
+                name: "JavaScript",
                 color: "green-text-gradient",
             },
             {
-                name: "css",
+                name: "React Context, Hooks",
                 color: "pink-text-gradient",
             },
         ],
-        image: tripguide,
-        source_code_link: "https://github.com/",
+        image: pathFinding,
+        source_code_link: "https://github.com/shreyas710/pathFindingVisualizer",
+        live_project_link: "https://shreyas710.github.io/pathFindingVisualizer/"
+    },
+    {
+        name: "Chat.io",
+        description:
+            "A chat application that enables real-time chat updation and real-time notifications using Socket.io. Implemented JWT Authentication for protecting user chats. Allowed faciity of creating group chats.",
+        tags: [
+            {
+                name: "ReactJS",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "NodeJS",
+                color: "green-text-gradient",
+            },
+            {
+                name: "Express",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "Socket.io",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "MongoDB",
+                color: "green-text-gradient",
+            },
+            {
+                name: "Mongoose",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "Chakra UI",
+                color: "blue-text-gradient",
+            },
+        ],
+        image: chatIO,
+        source_code_link: "https://github.com/shreyas710/Chat.io",
+        live_project_link: "https://chatapp-prod-70ef3a02f371.herokuapp.com/"
+    },
+    {
+        name: "Summarized Report for Chest X-Rays",
+        description:
+            "A Streamlit application focused on generating summarized medical report for uploaded Chest X-Rays",
+        tags: [
+            {
+                name: "Python",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "Tensorflow",
+                color: "green-text-gradient",
+            },
+            {
+                name: "Keras",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "Numpy",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "Pandas",
+                color: "green-text-gradient",
+            },
+            {
+                name: "Streamlit",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: chexnet,
+    },
+    {
+        name: "Career Fair Portal",
+        description:
+            "Web application for efficiently conducting the career fair process within a university. Students can streamline CV creation, manage job applications, and establish connections with recruiters through this portal.",
+        tags: [
+            {
+                name: "HTML",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "CSS",
+                color: "green-text-gradient",
+            },
+            {
+                name: "Django",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "MySQL",
+                color: "blue-text-gradient",
+            }
+        ],
+        image: placementPortal,
+        source_code_link: "https://github.com/sanketwadekar/career_fair_portal"
     },
 ];
 
-export {technologies, experiences, testimonials, projects};
+export { technologies, experiences, testimonials, projects };
