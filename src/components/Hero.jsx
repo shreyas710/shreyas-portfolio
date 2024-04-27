@@ -20,39 +20,21 @@ const Hero = () => {
                         sequence={[
                             "Software Engineer",
                             1500,
-                            "Full Stack Developer",
-                            1500,
-                            "Dev Ops Engineer",
-                            1500,
-                            "Game Engine Developer",
-                            1500,
-                            "Data Scientist",
-                            1500,
-                            "Machine Learning Engineer",
-                            1500,
                         ]}
                         className={`${styles.heroSubText} mt-2`}
                         wrapper="p"
-                        speed={30}
-                        deletionSpeed={70}
+                        speed={10}
                         style={{
-                            fontWeight: "300",
+                            fontSize: "30px",
+                            fontWeight: "500",
                             color: "#f1356d",
                             display: "inline-block",
                         }}
-                        repeat={1}
                     />
                 </div>
             </div>
 
-            <div className={`flex flex-col h-screen`}>
-                <div className={`h-1/4`}>
-                    <SpaceCanvas/>
-                </div>
-                <div className={`h-3/4`}>
-                    <ComputersCanvas/>
-                </div>
-            </div>
+            <ComputersCanvas/>
 
 
             <div className={`absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center`}>

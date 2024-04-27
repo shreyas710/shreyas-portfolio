@@ -4,6 +4,7 @@ import {
     bajaj,
     persistent,
     tripguide,
+    hitesh
 } from "../assets";
 
 export const navLinks = [
@@ -132,27 +133,12 @@ const experiences = [
 const testimonials = [
     {
         testimonial:
-            "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-        name: "Sara Lee",
-        designation: "CFO",
-        company: "Acme Co",
-        image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-        testimonial:
-            "I've never met a web developer who truly cares about their clients' success like Rick does.",
-        name: "Chris Brown",
-        designation: "COO",
-        company: "DEF Corp",
-        image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-        testimonial:
-            "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-        name: "Lisa Wang",
-        designation: "CTO",
-        company: "456 Enterprises",
-        image: "https://randomuser.me/api/portraits/women/6.jpg",
+            "I've had the privilege of collaborating with Shreyas Kulkarni at Bajaj Finserv. Shreyas possesses a remarkable blend of innovative thinking, rapid learning, and adept problem-solving skills. His ability to think outside the box consistently results in creative solutions that surpass expectations, while his quick adaptation to new technologies ensures he stays ahead in our ever-evolving industry.\n" +
+            "Shreyas is undoubtedly a valuable asset to any team, and I wholeheartedly endorse him for his outstanding contributions and capabilities.",
+        name: "Hitesh Solanki",
+        designation: "Senior Manager",
+        company: "Bajaj Finserv",
+        image: hitesh,
     },
 ];
 
