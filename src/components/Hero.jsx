@@ -2,7 +2,6 @@ import {motion} from "framer-motion";
 import {styles} from "../styles.js";
 import {ComputersCanvas} from "./canvas";
 import {TypeAnimation} from "react-type-animation";
-import {SpaceCanvas} from "./canvas";
 
 const Hero = () => {
     return (
