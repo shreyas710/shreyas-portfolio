@@ -11,7 +11,7 @@ const Computers = () => {
         <mesh>
             <pointLight power={1000} intensity={1000}/>
             <primitive object={computer.scene} scale={0.45}
-                       position={[0, 0, 10]}
+                       position={[5, 1, 10]}
                        rotation={[0, 0, 0]}/>
         </mesh>
     )
@@ -23,7 +23,7 @@ const ComputersCanvas = () => {
 
         setTimeout(() => {
             setRotate(false);
-        }, 10000)
+        }, 15000)
     }, [])
     return (
         <div className={`w-full h-full absolute inset-0 z-[-1]`}>

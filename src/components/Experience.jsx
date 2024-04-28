@@ -33,6 +33,7 @@ const Experience = () => {
     return (
         <>
             <div>
+                <p className={`${styles.sectionSubText}`}>What have I done so far</p>
                 <h2 className={styles.sectionHeadText}>Work Experience.</h2>
             </div>
 

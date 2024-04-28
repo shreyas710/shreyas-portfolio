@@ -42,10 +42,11 @@ const Works = () => {
     return (
         <>
             <div>
+                <p className={`${styles.sectionSubText}`}>My Work</p>
                 <h2 className={styles.sectionHeadText}>Projects.</h2>
             </div>
 
-            <div className={`flex flex-wrap gap-7`}>
+            <div className={`flex flex-wrap gap-5`}>
                 {projects.map((project, index) => (
                     <ProjectCard key={`project-${index}`} index={index} {...project} />
                 ))}

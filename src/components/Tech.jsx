@@ -6,6 +6,7 @@ const Tech = () => {
     return (
         <>
             <div>
+                <p className={`${styles.sectionSubText}`}>Technologies that i have worked on</p>
                 <h2 className={styles.sectionHeadText}>Skills.</h2>
             </div>
             <div className={`flex flex-col`}>

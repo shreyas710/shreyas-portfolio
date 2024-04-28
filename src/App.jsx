@@ -23,7 +23,7 @@ function App() {
                     <ComputersCanvas/>
                 </div>
             </div>
-            <div>
+            <div className="bg-[#1e1f31]">
                 <About/>
                 <Experience/>
                 <Tech/>
