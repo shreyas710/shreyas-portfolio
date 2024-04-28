@@ -1,9 +1,9 @@
-import {motion} from "framer-motion";
-import {styles} from "../styles.js";
-import {fadeIn, textVariant} from "../utils/motion.js";
-import {Cloudinary} from "@cloudinary/url-gen";
-import {AdvancedImage} from "@cloudinary/react";
-import {SectionWrapper} from '../hoc';
+import { motion } from "framer-motion";
+import { styles } from "../styles.js";
+import { fadeIn, textVariant } from "../utils/motion.js";
+import { Cloudinary } from "@cloudinary/url-gen";
+import { AdvancedImage } from "@cloudinary/react";
+import { SectionWrapper } from '../hoc';
 
 const About = () => {
     const cld = new Cloudinary({
@@ -27,10 +27,10 @@ const About = () => {
             <div className={`flex flex-row`}>
                 <div className={`flex flex-col`}>
                     <motion.p variants={fadeIn("", "", 0.1, 1)}
-                              className={`mt-4 text-secondary text-[20px] font-light max-w-3xl leading-[30px]`}>
+                        className={`mt-4 text-secondary text-[20px] font-light max-w-3xl leading-[30px]`}>
                         I am a Computer Science Graduate Student at the University of Southern California.
-                        <br/>
-                        <br/>
+                        <br />
+                        <br />
                         I have a good grasp of <span className={`font-bold`}>Data Structures and Algorithms</span>.
 
                         I have
@@ -85,23 +85,16 @@ const About = () => {
                             </a>
                         </div>
                     </div>
-                    <div
-                        className="font-bold mt-10 border-amber-300 w-[130px] h-[50px] rounded items-center flex justify-center"
-                        style={{background: "#f1356d"}}
-                    >
-                        <a
-                            href="https://drive.google.com/file/d/1LqBfJpBZIhgcC12OTVM7dM55zF6Xl1PY/view?usp=share_link"
-                            target="_blank"
-                            rel="noreferrer noopener"
-                            type="button"
+                   
+                        <button className="bg-white py-3 px-8 mt-10 outline-none w-fit text-tertiary font-bold shadow-md shadow-primary rounded-xl"
+                            type="submit" onClick={() => window.open("https://drive.google.com/file/d/1LqBfJpBZIhgcC12OTVM7dM55zF6Xl1PY/view?usp=share_link", "_blank")}
                         >
                             View Resume
-                        </a>
+                        </button>
                     </div>
-                </div>
 
                 <div className={`rounded-full hidden xl:flex mx-auto`}>
-                    <AdvancedImage className={`w-[230px] h-[390px] rounded-3xl`} loading="lazy" cldImg={profileImg}/>
+                    <AdvancedImage className={`w-[230px] h-[390px] rounded-3xl`} loading="lazy" cldImg={profileImg} />
                 </div>
             </div>
 
