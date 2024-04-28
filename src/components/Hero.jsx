@@ -19,13 +19,23 @@ const Hero = () => {
                         sequence={[
                             "Software Engineer",
                             1500,
+                            "Full Stack Developer",
+                            1500,
+                            "Devops Engineer",
+                            1500,
+                            "Data Analyst",
+                            1500,
+                            "Machine Learning Engineer",
+                            1500
+
                         ]}
                         className={`${styles.heroSubText} mt-2`}
                         wrapper="p"
-                        speed={10}
+                        speed={50}
+                        deletionSpeed={20}
                         style={{
                             fontSize: "30px",
-                            fontWeight: "500",
+                            fontWeight: "400",
                             color: "#f1356d",
                             display: "inline-block",
                         }}

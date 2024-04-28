@@ -1,6 +1,16 @@
 import {BrowserRouter} from "react-router-dom";
-import {About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas} from "./components";
-import SpaceCanvas from "./components/canvas/Space.jsx";
+import {
+    About,
+    Contact,
+    Experience,
+    Feedbacks,
+    Hero,
+    Navbar,
+    Tech,
+    Works,
+    StarsCanvas,
+    ComputersCanvas
+} from "./components";
 
 function App() {
     return (
@@ -9,11 +19,11 @@ function App() {
                 <Navbar/>
                 <div className="relative z-0">
                     <Hero/>
-                    <SpaceCanvas/>
                     <StarsCanvas/>
+                    <ComputersCanvas/>
                 </div>
             </div>
-            <div className={`bg-black-200`}>
+            <div>
                 <About/>
                 <Experience/>
                 <Tech/>
