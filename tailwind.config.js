@@ -21,6 +21,9 @@ export default {
             backgroundImage: {
                 "hero-pattern": "url('/src/assets/herobg.jpg')",
             },
+            animation: {
+                "spin-fast": "spin 0.2s linear 1",
+            }
         },
     },
     plugins: [],
