@@ -27,7 +27,7 @@ export const navLinks = [
         id: "projects",
         title: "Projects",
     },
-    
+
     {
         id: "contact",
         title: "Contact",
@@ -40,24 +40,35 @@ const technologies = [
         tech: [
             {
                 name: "C",
+                width: "100%"
             },
             {
                 name: "C++",
+                width: "100%"
+
             },
             {
                 name: "JavaScript",
+                width: "100%"
+
             },
             {
-                name: "TypeScript"
+                name: "TypeScript",
+                width: "100%"
+
             },
             {
-                name: "Python"
+                name: "Python",
+                width: "80%"
+
             },
             {
                 name: "Golang",
+                width: "100%"
             },
             {
-                name: "Bash"
+                name: "Bash",
+                width: "100%"
             },
         ],
         color: "text-sky-500"
@@ -65,42 +76,186 @@ const technologies = [
     {
         name: "Frontend",
         tech: [
-            { name: 'NextJS' }, { name: "ReactJS" }, { name: "Redux" }, { name: "Angular" }, { name: "ThreeJS" }, { name: "Tailwind CSS" }, { name: "Chakra UI" }, { name: "Material UI" }
+            {
+                name: 'NextJS',
+                width: "100%"
+            }, {
+                name: "ReactJS",
+                width: "100%"
+            }, {
+                name: "Redux",
+                width: "100%"
+            }, {
+                name: "Angular",
+                width: "100%"
+            }, {
+                name: "ThreeJS",
+                width: "60%"
+            }, {
+                name: "Tailwind CSS",
+                width: "100%"
+            }, {
+                name: "Chakra UI",
+                width: "100%"
+            }, {
+                name: "Material UI",
+                width: "100%"
+            }
         ],
         color: "text-[#FFBF00]"
     },
     {
         name: "Backend",
         tech: [
-            { name: "NodeJS" }, { name: "Rest APIs" }, { name: "GraphQL" }, { name: "Spring Boot" }, { name: "Flask" }, { name: "Django" }, { name: "Socket.io" }, { name: "JWT" }
+            {
+                name: "NodeJS",
+                width: "100%"
+            }, {
+                name: "Rest APIs",
+                width: "100%"
+            }, {
+                name: "GraphQL",
+                width: "80%"
+            }, {
+                name: "Spring Boot",
+                width: "80%"
+            }, {
+                name: "Flask",
+                width: "50%"
+            }, {
+                name: "Django",
+                width: "50%"
+            }, {
+                name: "Socket.io",
+                width: "100%"
+            }, {
+                name: "JWT",
+                width: "100%"
+            }
         ],
         color: "text-[#5BFF33]"
     },
     {
         name: "Databases",
         tech: [
-            { name: "MySQL" }, { name: "MongoDB" }, { name: "PostgreSQL" }, { name: "Supabase" }, { name: "Elasticsearch" }
+            {
+                name: "MySQL",
+                width: "100%"
+            }, {
+                name: "MongoDB",
+                width: "100%"
+            }, {
+                name: "PostgreSQL",
+                width: "100%"
+            }, {
+                name: "Supabase",
+                width: "100%"
+            }, {
+                name: "Elasticsearch",
+                width: "100%"
+            }
         ],
         color: "text-[#5233FF]"
     },
     {
         name: "Devops",
         tech: [
-            { name: "CI/CD" }, { name: "Jenkins" }, { name: "Ansible" }, { name: "Terraform" }, { name: "Azure" }, { name: "AWS" }, { name: "Docker" }, { name: "Kubernetes" }, { name: "MiniKube" }
+            {
+                name: "CI/CD",
+                width: "80%"
+            }, {
+                name: "Jenkins",
+                width: "80%"
+            }, {
+                name: "Ansible",
+                width: "80%"
+            }, {
+                name: "Terraform",
+                width: "100%"
+            }, {
+                name: "Azure",
+                width: "100%"
+            }, {
+                name: "AWS",
+                width: "100%"
+            }, {
+                name: "Docker",
+                width: "100%"
+            }, {
+                name: "Kubernetes",
+                width: "100%"
+            }, {
+                name: "MiniKube",
+                width: "100%"
+            }
         ],
         color: "text-[#33FFE9]"
     },
     {
         name: "Machine Learning",
         tech: [
-            { name: "Numpy" }, { name: "Keras" }, { name: "Pandas" }, { name: "PyTorch" }, { name: "Tensorflow" }, { name: "Neural Networks" }, { name: "RNN" }, { name: "CNN" }, { name: "LLM" }, { name: "Deep Learning" }, { name: "Data Analytics" }
+            {
+                name: "Numpy",
+                width: "100%"
+            }, {
+                name: "Keras",
+                width: "60%"
+            }, {
+                name: "Pandas",
+                width: "100%"
+            }, {
+                name: "PyTorch",
+                width: "60%"
+            }, {
+                name: "Tensorflow",
+                width: "60%"
+            }, {
+                name: "Neural Networks",
+                width: "100%"
+            }, {
+                name: "RNN",
+                width: "100%"
+            }, {
+                name: "CNN",
+                width: "100%"
+            }, {
+                name: "LLM",
+                width: "100%"
+            }, {
+                name: "Deep Learning",
+                width: "100%"
+            }, {
+                name: "Data Analytics",
+                width: "100%"
+            }
         ],
         color: "text-[#EF1A3F]"
     },
     {
         name: "Game Development",
         tech: [
-            { name: "Unreal Engine" }, { name: "3D Math" }, { name: "3D Computer Vision" }, { name: "3D Audio" }, { name: "3D Tracking" }, { name: "Win32 API" }, { name: "DirectX" }
+            {
+                name: "Unreal Engine",
+                width: "50%"
+            }, {
+                name: "3D Math",
+                width: "100%"
+            }, {
+                name: "3D Computer Vision",
+                width: "50%"
+            }, {
+                name: "3D Audio",
+                width: "50%"
+            }, {
+                name: "3D Tracking",
+                width: "50%"
+            }, {
+                name: "Win32 API",
+                width: "50%"
+            }, {
+                name: "DirectX",
+                width: "50%"
+            }
         ],
         color: "text-[#EF1AE5]"
     }

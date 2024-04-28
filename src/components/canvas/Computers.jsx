@@ -20,10 +20,11 @@ const Computers = () => {
 const ComputersCanvas = () => {
     const [rotate, setRotate] = useState(true);
     useEffect(() => {
+
         setTimeout(() => {
             setRotate(false);
-        }, 5000)
-    })
+        }, 10000)
+    }, [])
     return (
         <div className={`w-full h-full absolute inset-0 z-[-1]`}>
             <Canvas frameloop={`demand`} shadows camera={{fov: 25, near: 0.1, far: 200, position: [20, 3, 5]}}
