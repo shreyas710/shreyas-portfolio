@@ -27,18 +27,11 @@ const Hero = () => {
                             1500,
                             "Machine Learning Engineer",
                             1500
-
                         ]}
-                        className={`${styles.heroSubText} mt-2`}
+                        className={`${styles.sectionAnimationText} mt-5`}
                         wrapper="p"
                         speed={50}
                         deletionSpeed={20}
-                        style={{
-                            fontSize: "30px",
-                            fontWeight: "400",
-                            color: "#f1356d",
-                            display: "inline-block",
-                        }}
                     />
                 </div>
             </div>
