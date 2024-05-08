@@ -325,7 +325,7 @@ const projects = [
             }
         ],
         image: lagLlama,
-        source_code_link: "https://github.com/atharvajoshi10/quantized-lag-llama",
+        source_code_link: "https://github.com/Naadborole/TimeSeriesForecasting",
     },
     {
         name: "Pool Ball Game",
@@ -350,6 +350,7 @@ const projects = [
             }
         ],
         image: poolBall,
+        source_code_link: "https://github.com/shreyas710/Pool-Ball-Game/"
     },
     {
         name: "Path Finding Visualizer",
