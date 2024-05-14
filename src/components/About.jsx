@@ -85,13 +85,13 @@ const About = () => {
                             </a>
                         </div>
                     </div>
-                   
-                        <button className="bg-white py-3 px-8 mt-10 outline-none w-fit text-tertiary font-bold shadow-md shadow-primary rounded-xl"
-                            type="submit" onClick={() => window.open("https://drive.google.com/file/d/1LqBfJpBZIhgcC12OTVM7dM55zF6Xl1PY/view?usp=share_link", "_blank")}
-                        >
-                            View Resume
-                        </button>
-                    </div>
+
+                    <button className="bg-white py-3 px-8 mt-10 outline-none w-fit text-tertiary font-bold shadow-md shadow-primary rounded-xl"
+                        type="submit" onClick={() => window.open("https://drive.google.com/file/d/1OUDPsdjTZflLmzAK_d2nBBm7lYKuPvGa/view?usp=sharing", "_blank")}
+                    >
+                        View Resume
+                    </button>
+                </div>
 
                 <div className={`rounded-full hidden xl:flex mx-auto`}>
                     <AdvancedImage className={`w-[230px] h-[390px] rounded-3xl`} loading="lazy" cldImg={profileImg} />
