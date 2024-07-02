@@ -7,7 +7,9 @@ import {
     chatIO,
     poolBall,
     chexnet,
-    placementPortal
+    placementPortal,
+    sara,
+    usc
 } from "../assets";
 
 export const navLinks = [
@@ -21,7 +23,7 @@ export const navLinks = [
     },
     {
         id: "tech",
-        title: "Skills"
+        title: "Skills",
     },
     {
         id: "projects",
@@ -40,228 +42,290 @@ const technologies = [
         tech: [
             {
                 name: "C",
-                width: "100%"
+                width: "100%",
             },
             {
                 name: "C++",
-                width: "100%"
-
+                width: "100%",
             },
             {
                 name: "JavaScript",
-                width: "100%"
-
+                width: "100%",
             },
             {
                 name: "TypeScript",
-                width: "100%"
-
+                width: "100%",
             },
             {
                 name: "Python",
-                width: "80%"
-
+                width: "80%",
             },
             {
                 name: "Golang",
-                width: "100%"
+                width: "100%",
             },
             {
                 name: "Bash",
-                width: "100%"
+                width: "100%",
             },
         ],
-        color: "text-sky-500"
+        color: "text-sky-500",
     },
     {
         name: "Frontend",
         tech: [
             {
-                name: 'NextJS',
-                width: "100%"
-            }, {
+                name: "NextJS",
+                width: "100%",
+            },
+            {
                 name: "ReactJS",
-                width: "100%"
-            }, {
+                width: "100%",
+            },
+            {
                 name: "Redux",
-                width: "100%"
-            }, {
+                width: "100%",
+            },
+            {
                 name: "Angular",
-                width: "100%"
-            }, {
+                width: "100%",
+            },
+            {
                 name: "ThreeJS",
-                width: "60%"
-            }, {
+                width: "60%",
+            },
+            {
                 name: "Tailwind CSS",
-                width: "100%"
-            }, {
+                width: "100%",
+            },
+            {
                 name: "Chakra UI",
-                width: "100%"
-            }, {
+                width: "100%",
+            },
+            {
                 name: "Material UI",
-                width: "100%"
-            }
+                width: "100%",
+            },
         ],
-        color: "text-[#FFBF00]"
+        color: "text-[#FFBF00]",
     },
     {
         name: "Backend",
         tech: [
             {
                 name: "NodeJS",
-                width: "100%"
-            }, {
+                width: "100%",
+            },
+            {
                 name: "Rest APIs",
-                width: "100%"
-            }, {
+                width: "100%",
+            },
+            {
                 name: "GraphQL",
-                width: "80%"
-            }, {
+                width: "80%",
+            },
+            {
                 name: "Spring Boot",
-                width: "80%"
-            }, {
+                width: "80%",
+            },
+            {
                 name: "Flask",
-                width: "50%"
-            }, {
+                width: "50%",
+            },
+            {
                 name: "Django",
-                width: "50%"
-            }, {
+                width: "50%",
+            },
+            {
                 name: "Socket.io",
-                width: "100%"
-            }, {
+                width: "100%",
+            },
+            {
                 name: "JWT",
-                width: "100%"
-            }
+                width: "100%",
+            },
         ],
-        color: "text-[#5BFF33]"
+        color: "text-[#5BFF33]",
     },
     {
         name: "Databases",
         tech: [
             {
                 name: "MySQL",
-                width: "100%"
-            }, {
+                width: "100%",
+            },
+            {
                 name: "MongoDB",
-                width: "100%"
-            }, {
+                width: "100%",
+            },
+            {
                 name: "PostgreSQL",
-                width: "100%"
-            }, {
+                width: "100%",
+            },
+            {
                 name: "Supabase",
-                width: "100%"
-            }, {
+                width: "100%",
+            },
+            {
                 name: "Elasticsearch",
-                width: "100%"
-            }
+                width: "100%",
+            },
         ],
-        color: "text-[#5233FF]"
+        color: "text-[#5233FF]",
     },
     {
         name: "Devops",
         tech: [
             {
                 name: "CI/CD",
-                width: "80%"
-            }, {
+                width: "80%",
+            },
+            {
                 name: "Jenkins",
-                width: "80%"
-            }, {
+                width: "80%",
+            },
+            {
                 name: "Ansible",
-                width: "80%"
-            }, {
+                width: "80%",
+            },
+            {
                 name: "Terraform",
-                width: "100%"
-            }, {
+                width: "100%",
+            },
+            {
                 name: "Azure",
-                width: "100%"
-            }, {
+                width: "100%",
+            },
+            {
                 name: "AWS",
-                width: "100%"
-            }, {
+                width: "100%",
+            },
+            {
                 name: "Docker",
-                width: "100%"
-            }, {
+                width: "100%",
+            },
+            {
                 name: "Kubernetes",
-                width: "100%"
-            }, {
+                width: "100%",
+            },
+            {
                 name: "MiniKube",
-                width: "100%"
-            }
+                width: "100%",
+            },
         ],
-        color: "text-[#33FFE9]"
+        color: "text-[#33FFE9]",
     },
     {
         name: "Machine Learning",
         tech: [
             {
                 name: "Numpy",
-                width: "100%"
-            }, {
+                width: "100%",
+            },
+            {
                 name: "Keras",
-                width: "60%"
-            }, {
+                width: "60%",
+            },
+            {
                 name: "Pandas",
-                width: "100%"
-            }, {
+                width: "100%",
+            },
+            {
                 name: "PyTorch",
-                width: "60%"
-            }, {
+                width: "60%",
+            },
+            {
                 name: "Tensorflow",
-                width: "60%"
-            }, {
+                width: "60%",
+            },
+            {
                 name: "Neural Networks",
-                width: "100%"
-            }, {
+                width: "100%",
+            },
+            {
                 name: "RNN",
-                width: "100%"
-            }, {
+                width: "100%",
+            },
+            {
                 name: "CNN",
-                width: "100%"
-            }, {
+                width: "100%",
+            },
+            {
                 name: "LLM",
-                width: "100%"
-            }, {
+                width: "100%",
+            },
+            {
                 name: "Deep Learning",
-                width: "100%"
-            }, {
+                width: "100%",
+            },
+            {
                 name: "Data Analytics",
-                width: "100%"
-            }
+                width: "100%",
+            },
         ],
-        color: "text-[#EF1A3F]"
+        color: "text-[#EF1A3F]",
     },
     {
         name: "Game Development",
         tech: [
             {
                 name: "Unreal Engine",
-                width: "50%"
-            }, {
+                width: "50%",
+            },
+            {
                 name: "3D Math",
-                width: "100%"
-            }, {
+                width: "100%",
+            },
+            {
                 name: "3D Computer Vision",
-                width: "50%"
-            }, {
+                width: "50%",
+            },
+            {
                 name: "3D Audio",
-                width: "50%"
-            }, {
+                width: "50%",
+            },
+            {
                 name: "3D Tracking",
-                width: "50%"
-            }, {
+                width: "50%",
+            },
+            {
                 name: "Win32 API",
-                width: "50%"
-            }, {
+                width: "50%",
+            },
+            {
                 name: "DirectX",
-                width: "50%"
-            }
+                width: "50%",
+            },
         ],
-        color: "text-[#EF1AE5]"
-    }
+        color: "text-[#EF1AE5]",
+    },
 ];
 
 const experiences = [
+    {
+        title: "Software Development Engineer Intern",
+        company_name: "SARA Technology Inc.",
+        icon: sara,
+        iconBg: "#383E56",
+        date: "June 2024 - Present",
+        points: [
+            "Implemented a React Native application using AWS Amplify Gen 2 to develop a speech therapy app for children.",
+            "Added user authentication and authorization using AWS Amplify Cognito User Pool, allowing efficient sign-up and sign-in without a backend service. Used DynamoDB to store user-related information.",
+            "Researched LLMs to recognize children’s sounds for various phonetics. Integrated it with the app.",
+        ],
+    },
+    {
+        title: "Research Assistant",
+        company_name: "University of Southern California",
+        icon: usc,
+        iconBg: "#383E56",
+        date: "June 2024 - Present",
+        points: [
+            "Collaborated with Prof. Babak Boloury to develop a specialized CAD application using WPF C#, focused on replicating the Sketcher component of FreeCAD.",
+            "Engineered the application to include advanced functionalities like Center of Momentum and Moment of Inertia calculations.",
+            "Achieved significant optimization by reducing the application size from 3 GB to 500 MB, enhancing efficiency and user accessibility.",
+        ],
+    },
     {
         title: "Software Engineer",
         company_name: "Bajaj Finserv",
@@ -286,7 +350,7 @@ const experiences = [
             "Added functionality to display new product arrivals resulting in a 20% increase in customer engagement.",
             "Developed feature to select different stores and place orders from different stores using MapMyIndia API.",
         ],
-    }
+    },
 ];
 
 const testimonials = [
@@ -322,7 +386,7 @@ const projects = [
             {
                 name: "Time Series",
                 color: "blue-text-gradient",
-            }
+            },
         ],
         image: lagLlama,
         source_code_link: "https://github.com/Naadborole/TimeSeriesForecasting",
@@ -347,10 +411,10 @@ const projects = [
             {
                 name: "Win32 API",
                 color: "blue-text-gradient",
-            }
+            },
         ],
         image: poolBall,
-        source_code_link: "https://github.com/shreyas710/Pool-Ball-Game/"
+        source_code_link: "https://github.com/shreyas710/Pool-Ball-Game/",
     },
     {
         name: "Path Finding Visualizer",
@@ -372,7 +436,8 @@ const projects = [
         ],
         image: pathFinding,
         source_code_link: "https://github.com/shreyas710/pathFindingVisualizer",
-        live_project_link: "https://shreyas710.github.io/pathFindingVisualizer/"
+        live_project_link:
+            "https://shreyas710.github.io/pathFindingVisualizer/",
     },
     {
         name: "Chat.io",
@@ -410,7 +475,7 @@ const projects = [
         ],
         image: chatIO,
         source_code_link: "https://github.com/shreyas710/Chat.io",
-        live_project_link: "https://chatapp-prod-70ef3a02f371.herokuapp.com/"
+        live_project_link: "https://chatapp-prod-70ef3a02f371.herokuapp.com/",
     },
     {
         name: "Summarized Report for Chest X-Rays",
@@ -464,10 +529,10 @@ const projects = [
             {
                 name: "MySQL",
                 color: "blue-text-gradient",
-            }
+            },
         ],
         image: placementPortal,
-        source_code_link: "https://github.com/sanketwadekar/career_fair_portal"
+        source_code_link: "https://github.com/sanketwadekar/career_fair_portal",
     },
 ];
 

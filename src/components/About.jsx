@@ -3,7 +3,7 @@ import { styles } from "../styles.js";
 import { fadeIn, textVariant } from "../utils/motion.js";
 import { Cloudinary } from "@cloudinary/url-gen";
 import { AdvancedImage } from "@cloudinary/react";
-import { SectionWrapper } from '../hoc';
+import { SectionWrapper } from "../hoc";
 
 const About = () => {
     const cld = new Cloudinary({
@@ -11,9 +11,9 @@ const About = () => {
             cloudName: "dvuknw9qw",
         },
     });
-    const profileImg = cld.image('docs/models-4');
-    const githubLogo = cld.image("docs/models-6")
-    const linkedinLogo = cld.image("docs/models-3")
+    const profileImg = cld.image("docs/models-4");
+    const githubLogo = cld.image("docs/models-6");
+    const linkedinLogo = cld.image("docs/models-3");
     const instaLogo = cld.image("docs/models-2");
 
     return (
@@ -26,80 +26,87 @@ const About = () => {
 
             <div className={`flex flex-row`}>
                 <div className={`flex flex-col`}>
-                    <motion.p variants={fadeIn("", "", 0.1, 1)}
+                    <motion.p
+                        variants={fadeIn("", "", 0.1, 1)}
                         className={`mt-4 text-secondary text-[20px] font-light max-w-3xl leading-[30px]`}>
-                        I am a Computer Science Graduate Student at the University of Southern California.
+                        I am a Computer Science Graduate Student at the
+                        University of Southern California.
                         <br />
-                        <br />
-                        I have a good grasp of <span className={`font-bold`}>Data Structures and Algorithms</span>.
-
-                        I have
-                        good experience in the fields of DevOps,
-                        Full
+                        <br />I have a good grasp of{" "}
+                        <span className={`font-bold`}>
+                            Data Structures and Algorithms
+                        </span>
+                        . I have good experience in the fields of DevOps, Full
                         Stack Development and Machine Learning.
                     </motion.p>
-                    <div className="mt-20 flex flex-row">
-                        <div className="col-auto">
+                    <div className='mt-20 flex flex-row'>
+                        <div className='col-auto'>
                             <a
-                                href="https://github.com/shreyas710"
-                                target="_blank"
-                                rel="noreferrer noopener"
-                            >
+                                href='https://github.com/shreyas710'
+                                target='_blank'
+                                rel='noreferrer noopener'>
                                 <AdvancedImage
-                                    loading="lazy"
+                                    loading='lazy'
                                     cldImg={githubLogo}
                                     width={"30px"}
                                     height={"30px"}
-                                    alt="github"
+                                    alt='github'
                                 />
                             </a>
                         </div>
-                        <div className="ml-10">
+                        <div className='ml-10'>
                             <a
-                                href="https://www.linkedin.com/in/shreyasnk532"
-                                target="_blank"
-                                rel="noreferrer noopener"
-                            >
+                                href='https://www.linkedin.com/in/shreyasnk532'
+                                target='_blank'
+                                rel='noreferrer noopener'>
                                 <AdvancedImage
-                                    loading="lazy"
+                                    loading='lazy'
                                     cldImg={linkedinLogo}
                                     width={"30px"}
                                     height={"30px"}
-                                    alt="linkedin"
+                                    alt='linkedin'
                                 />
                             </a>
                         </div>
-                        <div className="ml-10">
+                        <div className='ml-10'>
                             <a
-                                href="https://www.instagram.com/shr3yas.ku1karni"
-                                target="_blank"
-                                rel="noreferrer noopener"
-                            >
+                                href='https://www.instagram.com/shr3yas.ku1karni'
+                                target='_blank'
+                                rel='noreferrer noopener'>
                                 <AdvancedImage
-                                    loading="lazy"
+                                    loading='lazy'
                                     cldImg={instaLogo}
                                     width={"30px"}
                                     height={"30px"}
-                                    alt="instagram"
+                                    alt='instagram'
                                 />
                             </a>
                         </div>
                     </div>
 
-                    <button className="bg-white py-3 px-8 mt-10 outline-none w-fit text-tertiary font-bold shadow-md shadow-primary rounded-xl"
-                        type="submit" onClick={() => window.open("https://drive.google.com/file/d/1OUDPsdjTZflLmzAK_d2nBBm7lYKuPvGa/view?usp=sharing", "_blank")}
-                    >
+                    <button
+                        className='bg-white py-3 px-8 mt-10 outline-none w-fit text-tertiary font-bold shadow-md shadow-primary rounded-xl'
+                        type='submit'
+                        onClick={() =>
+                            window.open(
+                                "https://drive.google.com/file/d/1HeGJaOGUsBhTZIDWBdz1jltgZzZgYQYH/view?usp=sharing",
+                                "_blank"
+                            )
+                        }>
                         View Resume
                     </button>
                 </div>
 
                 <div className={`rounded-full hidden xl:flex mx-auto`}>
-                    <AdvancedImage className={`w-[230px] h-[390px] rounded-3xl`} loading="lazy" cldImg={profileImg} />
+                    <AdvancedImage
+                        className={`w-[230px] h-[390px] rounded-3xl`}
+                        loading='lazy'
+                        cldImg={profileImg}
+                    />
                 </div>
             </div>
-
         </>
-    )
-}
+    );
+};
 
 export default SectionWrapper(About, "about");
