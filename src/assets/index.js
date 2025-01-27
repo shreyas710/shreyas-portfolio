@@ -10,6 +10,7 @@ import sara from "./company/sara.png";
 import usc from "./company/usc.png";
 
 import hitesh from "./testimonials/hitesh.jpeg";
+import weiji from "./testimonials/weiji.jpeg";
 
 import lagLlama from "./lagllama.png";
 import pathFinding from "./pathfinding.png";
@@ -34,5 +35,6 @@ export {
     chexnet,
     placementPortal,
     sara,
-    usc
+    usc,
+    weiji
 };
