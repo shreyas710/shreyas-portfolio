@@ -5,12 +5,13 @@ import close from "./close.svg";
 import projectLink from "./projectLink.png";
 
 import bajaj from "./company/bajaj.png";
-import persistent from "./company/persistent.png";
 import sara from "./company/sara.png";
 import usc from "./company/usc.png";
+import fabric from "./company/fabric.png"
 
 import hitesh from "./testimonials/hitesh.jpeg";
 import weiji from "./testimonials/weiji.jpeg";
+import matthew from "./testimonials/matthew.png"
 
 import lagLlama from "./lagllama.png";
 import pathFinding from "./pathfinding.png";
@@ -28,7 +29,6 @@ export {
     close,
     bajaj,
     chatIO,
-    persistent,
     pathFinding,
     projectLink,
     poolBall,
@@ -36,5 +36,7 @@ export {
     placementPortal,
     sara,
     usc,
-    weiji
+    weiji,
+    fabric,
+    matthew
 };

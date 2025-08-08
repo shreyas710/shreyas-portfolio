@@ -1,6 +1,5 @@
 import {
   bajaj,
-  persistent,
   hitesh,
   lagLlama,
   pathFinding,
@@ -10,7 +9,9 @@ import {
   placementPortal,
   sara,
   usc,
-  weiji
+  weiji,
+  fabric,
+  matthew
 } from "../assets";
 
 export const navLinks = [
@@ -304,18 +305,45 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Grader",
-    company_name: "University of Southern California",
+    title: "Software Engineer",
+    company_name: "SARA Technology Inc.",
+    icon: sara,
+    iconBg: "#383E56",
+    date: "June 2025 - Present",
+    points: [
+      "Spearheaded state-machine game flow, cutting bug reports by 40% and streamlining transitions across 10+ therapy levels.",
+      "Built scalable AWS Lambda services to manage 5K+ children’s voice recordings with less than 100ms latency.",
+      "Executed DynamoDB stream triggers to offload statistics computations, decreasing processing time from 5s to 30ms.",
+      "Skills: React, Expo, GraphQL, AWS Amplify Gen2, DynamoDB, AWS."
+    ],
+  },
+  {
+    title: "Backend Engineer",
+    company_name: "Fabric",
+    icon: fabric,
+    iconBg: "#383E56",
+    date: "February 2025 - May 2025",
+    points: [
+      "Architected real-time analytics pipelines using AWS Step Functions, processing 100K+ telemetry records/day.",
+      "Combined Twitter Activity API with Dockerized AWS Lambdas, enabling sub-1ms real-time data relay.",
+      "Wrote GitHub Actions & CloudFormation CI/CD pipelines, collaborating with DevOps to reduce deployment time by 60%.",
+      "Skills: AWS, Python, CI/CD, Git, Node.js."
+    ],
+  },
+  {
+    title: "Graduate Teaching Assistant",
+    company_name: "University of Southern California. CSCI 522: Game Engine Development",
     icon: usc,
     iconBg: "#383E56",
     date: "September 2024 - December 2024",
     points: [
-      "Designed and graded CSCI 522: Game Engine Development assignments on 3D math, physics concepts, GPU rendering, multithreading, and ray tracing.",
-      "Controlled a class of 70 students, providing guidance and resolving doubts related to assignments.",
+      "Mentored 70+ grad students on advanced C++ concepts, boosting assignment performance by 25%.",
+      "Created 8+ custom tutorial docs and debug walkthroughs; hosted weekly office hours.",
+      "Skills: C, C++, GDB, Python, Maya, Multithreading, GPU."
     ],
   },
   {
-    title: "Research Assistant",
+    title: "Graduate Research Assistant",
     company_name: "University of Southern California",
     icon: usc,
     iconBg: "#383E56",
@@ -323,21 +351,20 @@ const experiences = [
     points: [
       "Built CAD application using WPF C#, replicating FreeCAD Sketcher component.",
       "Coded functionalities Center of Momentum & Moment of Inertia and brought down application size to 500 MB.",
-      "Incorporated FreeCAD Sketcher and Part Design functionalities into app.",
+      "Skills: C#, WPF, .NET, FreeCAD.",
     ],
   },
   {
-    title: "Software Engineer Intern",
+    title: "Full Stack Engineer",
     company_name: "SARA Technology Inc.",
     icon: sara,
     iconBg: "#383E56",
     date: "June 2024 - August 2024",
     points: [
-      "Engineered React Native speech therapy app for children leveraging AWS Amplify Gen 2.",
-      "Developed entire onboarding flow including user authentication, user verification, forgot & reset password feature.",
-      "Utilized DynamoDB and GraphQL to store information. Implemented Recoil from scratch for state management.",
-      "Implemented Python script to store images, and audio recordings (Amazon Polly) in Amazon S3 for all words.",
-      "Researched and implemented Wav2Vec2 model for speech recognition to provide feedback to children.",
+      "Engineered React Native app for speech therapy, partnering with designers and QA with 99.8% crash-free sessions.",
+      "Streamlined over 1K+ weekly media interactions, cutting TAT by 50% and significantly improving delivery accuracy.",
+      "Architected scalable Recoil state management across 15+ screens, accelerating team feature delivery velocity by 40%.",
+      "Skills: React, Recoil, AWS Amplify Gen2, GraphQL, DynamoDB."
     ],
   },
   {
@@ -347,34 +374,27 @@ const experiences = [
     iconBg: "#383E56",
     date: "July 2022 - June 2023",
     points: [
-      "Engineered ICL module serving 50,000 customers & generating $500K in additional revenue.",
-      "Implemented SLV module, enhancing user flexibility, resulting in a 70% increase in customer engagement.",
-      "Deployed ELK stack API Monitoring system using PVCs and Kubernetes, enhancing API performance by 60%.",
-      "Leveraged Google Analytics and Clickstream to optimize performance for EMI, HEMI, SALPL modules.",
-    ],
-  },
-  {
-    title: "Software Development Engineer Intern",
-    company_name: "Persistent Systems",
-    icon: persistent,
-    iconBg: "#E6DEDD",
-    date: "June 2021 - July 2021",
-    points: [
-      "Devised web app for Indian Army, facilitating online shopping; introduced new product arrival feature increasing customer engagement by 60%.",
-      "Integrated MapMyIndia API, enabling seamless store selection and order placement.",
+      "Formulated customer-facing Angular/Spring Boot modules for 50K+ users, driving $500K+ in revenue.",
+      "Led backend development for SLV module, improving engagement by 70% through feature expansion (Jul 2022 – Jun 2023).",
+      "Fostered dashboards using ELK stack; collaborated with analytics and product teams to cut down bounce rate by 18%.",
+      "Skills: Java, Spring Boot, Kafka, Docker, ELK, AWS, PostgreSQL, Azure."
     ],
   },
 ];
 
 const testimonials = [
   {
+    testimonial: "I had the pleasure of working with Shreyas while getting a critical project off the ground. From the start, he demonstrated remarkable adaptability, quickly mastering the nuances of our serverless AWS infrastructure and contributing critical logic to our systems. He consistently produced high quality work, while demonstrating a high technical aptitude and meticulous attention to detail. Shreyas was a key player on our team, and I would highly recommend him to any organization looking for a developer who can thrive in complex environments and consistently deliver exceptional results.",
+    name: "Matthew Aragaw",
+    designation: "Co-Founder and CTO",
+    company: "Fabric",
+    image: matthew,
+  },
+  {
     testimonial: "I had the privilege of working alongside Shreyas during his summer internship at Sara, where he skillfully handled full-stack development of our core pages, using technologies such as React Native, Expo, and AWS Amplify.\n" +
-
-"Shreyas quickly adapted to our tech stack, efficiently mastering user data models and React context to enhance the functionality and user experience of our applications. His ability to identify and resolve intricate issues, showcased his meticulous attention to detail and commitment to code quality.\n" + 
-
-"Furthermore, Shreyas demonstrated an exceptional ability to troubleshoot and resolve challenging bugs within AWS Amplify, ensuring robustness and reliability in our deployment processes. His project ownership was exemplary; he not only maintained and improved our codebase through clear abstraction and documentation updates but also managed full-cycle development—from system design to implementation—with minimal supervision.\n" + 
-
-"Shreyas’s proactive approach and technical versatility significantly contributed to our projects. I am confident in his ability to bring the same level of expertise and initiative to any future role. I wholeheartedly recommend him for opportunities that require a dedicated and technically adept engineer.",
+      "Shreyas quickly adapted to our tech stack, efficiently mastering user data models and React context to enhance the functionality and user experience of our applications. His ability to identify and resolve intricate issues, showcased his meticulous attention to detail and commitment to code quality.\n" +
+      "Furthermore, Shreyas demonstrated an exceptional ability to troubleshoot and resolve challenging bugs within AWS Amplify, ensuring robustness and reliability in our deployment processes. His project ownership was exemplary; he not only maintained and improved our codebase through clear abstraction and documentation updates but also managed full-cycle development—from system design to implementation—with minimal supervision.\n" +
+      "Shreyas’s proactive approach and technical versatility significantly contributed to our projects. I am confident in his ability to bring the same level of expertise and initiative to any future role. I wholeheartedly recommend him for opportunities that require a dedicated and technically adept engineer.",
     name: "Weiji Huang",
     designation: "Machine Learning Engineer",
     company: "SARA Technology Inc.",

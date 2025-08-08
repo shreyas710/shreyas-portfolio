@@ -1,6 +1,6 @@
-import {motion} from "framer-motion";
-import {styles} from "../styles.js";
-import {TypeAnimation} from "react-type-animation";
+import { motion } from "framer-motion";
+import { styles } from "../styles.js";
+import { TypeAnimation } from "react-type-animation";
 
 const Hero = () => {
     return (
@@ -8,8 +8,8 @@ const Hero = () => {
             <div
                 className={`${styles.paddingX} absolute inset-0 top-[120px] mx-auto mt-[40px] max-w-7xl flex flex-row items-start justify-center gap-5`}>
                 <div className={`flex flex-col justify-center items-center mt-5`}>
-                    <div className={`w-5 h-5 rounded-full bg-[#e0cdb4]`}/>
-                    <div className={`w-1 sm:h-80 h-40 violet-gradient`}/>
+                    <div className={`w-5 h-5 rounded-full bg-[#e0cdb4]`} />
+                    <div className={`w-1 sm:h-80 h-40 violet-gradient`} />
                 </div>
                 <div>
                     <h1 className={`${styles.heroHeadText}`}>Hi, I&apos;m <span
@@ -21,12 +21,8 @@ const Hero = () => {
                             1500,
                             "Full Stack Developer",
                             1500,
-                            "Devops Engineer",
+                            "Systems Programmer",
                             1500,
-                            "Data Analyst",
-                            1500,
-                            "Machine Learning Engineer",
-                            1500
                         ]}
                         className={`${styles.sectionAnimationText} mt-5`}
                         wrapper="p"
@@ -41,9 +37,9 @@ const Hero = () => {
                 <a href="#about">
                     <div
                         className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-1">
-                        <motion.div animate={{y: [0, 24, 0]}}
-                                    transition={{duration: 2, repeat: Infinity, repeatType: 'loop'}}
-                                    className={`h-3 w-3 rounded-full bg-secondary m-1`}>
+                        <motion.div animate={{ y: [0, 24, 0] }}
+                            transition={{ duration: 2, repeat: Infinity, repeatType: 'loop' }}
+                            className={`h-3 w-3 rounded-full bg-secondary m-1`}>
 
                         </motion.div>
                     </div>
